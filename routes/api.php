@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\GallariesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::post('/login', 'Auth\LoginController@authenticate');
 Route::post('/register', 'Auth\RegisterController@create');
+Route::get('/galleries', 'GallariesController@index');
