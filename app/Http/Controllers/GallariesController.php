@@ -1,6 +1,5 @@
-<?php
-
-namespace App\Http\Controllers;
+<?php namespace 
+    App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gallery;
@@ -14,9 +13,7 @@ class GallariesController extends Controller
      */
     public function index()
     {
-        // return Gallery::all()->paginate(10);  
-        return Gallery::getAllGalleries();
-    
+        return Gallery::all();
     }
 
     /**
@@ -85,3 +82,4 @@ class GallariesController extends Controller
         //
     }
 }
+;

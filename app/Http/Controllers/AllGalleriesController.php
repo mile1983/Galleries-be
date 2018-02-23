@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Gallery;
@@ -12,7 +12,7 @@ class AllGalleriesController extends Controller
     public function index()
     {
         
-         return Gallery::all()->paginate(10);
+         return Gallery::all();
     }
     /**
      * Show the form for creating a new resource.
@@ -74,4 +74,5 @@ class AllGalleriesController extends Controller
     {
         //
     }
-} -->
+}
+;
